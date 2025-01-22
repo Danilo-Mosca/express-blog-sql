@@ -54,8 +54,9 @@ function show(req, res) {
     */
 
     /* SECONDA QUERY: Se trova la pizza allora eseguo la seconda query per prendere i tags */
-    const sqlTags = `SELECT DISTINCT posts.id, posts.title FROM posts
+    const sqlTags = `SELECT posts.id, tags.title FROM posts
 JOIN post_tag ON post_tag.post_id = posts.id
+JOIN tags ON tags.id = post_tag.tag_id
 WHERE post_tag.post_id = ?`;
     // Uso il metodo query() per passargli la query SQL, il valore di "?", e una funzione di callback:
     connection.query(sqlTags, [id], (err, results) => {
