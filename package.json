@@ -1,5 +1,5 @@
 {
-  "name": "template-express-backend-react-router",
+  "name": "ex-express-blog-sql",
   "version": "1.0.0",
   "description": "```bash\r # clone repository\r # add package-lock.json to .gitignore\r # edit README.md",
   "main": "server.js",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.9",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
   }
 }

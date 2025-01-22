@@ -1,4 +1,3 @@
-import { tags } from "../models/posts.js";
 import CustomError from "../classes/CustomError.js";
 
 function index(req, res) {
